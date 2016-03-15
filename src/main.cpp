@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 {
     Game game;
 
-    game.pushState(new state_gameplay(&game));
+    game.states.pushState(new state_gameplay(&game));
     game.gameLoop();
 
     return 0;

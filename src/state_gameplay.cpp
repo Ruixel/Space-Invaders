@@ -1,3 +1,6 @@
+// *** ADDED BY HEADER FIXUP ***
+#include <istream>
+// *** END ***
 #include "state_gameplay.h"
 #include <iostream>
 
@@ -52,6 +55,8 @@ void state_gameplay::handleInput()
         {
         case sf::Event::Closed:
             game->window.close();
+            break;
+        default:
             break;
         }
 

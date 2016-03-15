@@ -3,15 +3,18 @@
 
 #include "game.hpp"
 
-class GameState {
+class GameState
+{
 private:
-  /* data */
+    /* data */
 public:
-  Game* game;
+    Game* game;
 
-  virtual void draw(const float dt) = 0;
-  virtual void update(const float dt) = 0;
-  virtual void handleInput() = 0;
+    virtual void draw(const float dt) = 0;
+    virtual void update(const float dt) = 0;
+    virtual void handleInput() = 0;
+
+    virtual ~GameState() { } //Because stupid warning were annoying me
 
 };
 

@@ -46,7 +46,12 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="include" />
+			<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/include" />
 		</Compiler>
+		<Linker>
+			<Add directory="C:/Users/Matthew/Documents/Programming/C++/Libaries/SFML-2.3/lib" />
+		</Linker>
 		<Unit filename="include/base/AnimatedSprite.hpp" />
 		<Unit filename="include/base/Animation.hpp" />
 		<Unit filename="include/base/game.hpp" />
@@ -54,6 +59,7 @@
 		<Unit filename="include/base/tex_manager.hpp" />
 		<Unit filename="include/player.h" />
 		<Unit filename="include/state_gameplay.h" />
+		<Unit filename="include/state_stack.h" />
 		<Unit filename="src/base/AnimatedSprite.cpp" />
 		<Unit filename="src/base/Animation.cpp" />
 		<Unit filename="src/base/game.cpp" />
@@ -61,6 +67,7 @@
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/player.cpp" />
 		<Unit filename="src/state_gameplay.cpp" />
+		<Unit filename="src/state_handler.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

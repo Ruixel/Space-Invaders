@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 
-#include "tex_manager.hpp"
+#include "base/tex_manager.hpp"
 
 void TextureManager::loadTexture(const std::string& filename, const std::string& tex_name) {
   sf::Texture tex;
